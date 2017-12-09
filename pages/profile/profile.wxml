@@ -1,0 +1,12 @@
+<view class='bg'>
+  <image src='../../assets/images/avatar.png'></image>
+</view>
+<navigator class='mar-top arrow'><text>个人资料</text></navigator>
+<navigator class='arrow'><text>我的优惠券</text></navigator>
+
+<navigator class='mar-top arrow'><text>常见问题</text></navigator>
+<navigator class='arrow'><text>使用条款</text></navigator>
+<navigator class='arrow'><text>隐藏权政策</text></navigator>
+<navigator class='arrow'><text>联系客服</text></navigator>
+
+<navigator class='mar-top arrow'><text>设置</text></navigator>

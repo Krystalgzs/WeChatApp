@@ -1,0 +1,16 @@
+<view class="shop" wx:for="{{shops}}" wx:key="{{id}}" wx:if="{{item.images}}"> 
+  <view>
+    <image class='shop-img' src='{{item.images[0]}}'></image>
+  </view> 
+  <view class='shop-info'>
+    <text class='name'>{{item.name}}</text>
+    <text class='tel'>电话：{{item.phone}}</text>
+    <text class='address ellipsis'>地址：{{item.address}}</text>
+    <text class='time'>营业时间：{{item.businessHours}}</text>
+  </view>
+  <view class="shop-star">
+    <text class="star-before">★★★★★</text>
+    <text class="star-after" style="width:80%;">★★★★★</text>
+  </view>
+</view>
+

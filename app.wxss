@@ -1,0 +1,62 @@
+/* 右边框 */
+.bd-r{
+  position: relative;
+}
+.bd-r::after{
+  content: "";
+  width: 1rpx;
+  height: 100%;
+  background-color: #ebebeb;
+  position: absolute;
+  right: 0;
+   top: 0; 
+}
+.bd-r:nth-child(3n)::after{
+   width: 0; 
+}
+
+.mar-bottom{
+  margin-bottom: 20rpx;
+}
+.mar-top{
+  margin-top: 30rpx;
+}
+.arrow{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrow::after{
+  content: "";
+  width: 15rpx;
+  height: 15rpx;
+  border-width: 3rpx 3rpx 0 0 ;
+  border-style: solid;
+  border-color: #cbcbcb;
+  transform: rotate(45deg);
+}
+
+/* 星星打分 */
+.shop .shop-star {
+  width: 152rpx;
+  position: absolute;
+  top: 10rpx;
+  right: 40rpx;
+}
+.shop-star .star-after {
+  color: #f90;
+  position: absolute;
+  overflow: hidden;
+}
+.shop-star .star-before {
+  color: #e2e2e2;
+  position: absolute;
+}
+
+/* 实现溢出出现省略号 */
+.ellipsis{
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

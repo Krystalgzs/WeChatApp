@@ -1,0 +1,16 @@
+<view class='message' wx:for="{{messageList}}" wx:key="{{id}}">
+  <navigator class='free'>
+    <text class='title1'>{{item.title}}</text>
+    <text class='title2 mar-bottom'>{{item.date}}</text>
+    <image class=' mar-bottom' mode='aspectFull' src='{{item.image}}'></image>
+    <text class='title3'>{{item.desc}}</text>
+    <text class='readAll arrow'>Read All</text>
+  </navigator>
+  <!-- <navigator class='free'>
+    <text class='title1'>免费送票!超有内涵的门票。</text>
+    <text class='title2'>17 September</text>
+    <image src='../../assets/images/banana.jpg'></image>
+    <text class='title3'>最糟糕的，也许就是最幸运的。</text>
+    <text class='readAll arrow'>Read All</text>
+  </navigator> -->
+</view>

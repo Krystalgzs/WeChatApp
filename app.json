@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/profile/profile",
+    "pages/message/message",
+    "pages/list/list"
+  ],
+  "window":{
+    "backgroundColor":"#000000",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#3a4862",
+    "navigationBarTitleText": "撸猫吧",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":"true"
+  },
+  "tabBar":{
+    "color": "#000000",
+    "selectedColor":"#f60",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/assets/tabs/home.png",
+      "selectedIconPath": "/assets/tabs/home-active.png"
+    },{
+      "pagePath": "pages/message/message",
+      "text": "消息",
+      "iconPath": "/assets/tabs/message.png",
+      "selectedIconPath": "/assets/tabs/message-active.png"
+    },
+    {
+      "pagePath": "pages/profile/profile",
+      "text": "我的",
+      "iconPath": "/assets/tabs/profile.png",
+      "selectedIconPath": "/assets/tabs/profile-active.png"
+    }]
+  }
+}

@@ -1,0 +1,27 @@
+<view class='view'>
+<swiper indicator-dots="true" autoplay="true" interval="2000" duration="400" circular="true">
+	<swiper-item wx:for="{{swiperList}}" wx:key="id" wx:if="{{item.image}}">
+      	<image src='{{item.image}}' mode='aspectFill' width="375" height="150"/>
+    </swiper-item>
+</swiper>
+  <view class='index_nav'>
+     <navigator url='/pages/list/list?id={{item.id}}&name={{item.name}}' class='li bd-r' wx:for="{{categories}}" wx:key="id" wx-if="{{item.name}}">
+       <image src='{{item.icon}}'></image>
+      <text>{{item.name}}</text>
+     </navigator>
+    <navigator  url='/pages/list/list?id=3' class='li bd-r'>
+      <image src='../../assets/icons/grid-09.png'></image>
+      <text>玩具</text>
+      </navigator>
+  </view>
+  <view class='line'></view>
+  <view class='recommend'>
+   <navigator>
+    <image src='../../assets/images/link-01.png'></image>
+    </navigator>
+    <navigator>
+    <image src='../../assets/images/link-02.png'></image>
+    </navigator> 
+  </view>
+  <view class='line'></view>
+</view>
